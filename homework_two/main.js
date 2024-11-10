@@ -5,7 +5,7 @@ for (const number of numbers) {
     let str_num = String(number)
     let char_num = str_num[0]
 
-    if (char_num == 1 || char_num == 2 || char_num == 5){
+    if (char_num === "1" || char_num === "2" || char_num === "5"){
         console.log(str_num)
     }
 }
