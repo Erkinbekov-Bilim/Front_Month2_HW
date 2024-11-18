@@ -26,11 +26,11 @@ const createTodo = () => {
     input.value = "";
 
     button_edit.onclick = () => {
-        const edited_text = prompt("Редактирование текста")
+        const edited_text = prompt(`Редактирование текста ${text.innerHTML}`);
         text.innerHTML = edited_text;
     }
 
-    button_delete.onclick = () => div.style.display = "none"
+    button_delete.onclick = () => div.remove()
 };
 
 createButton.onclick = () => createTodo();
