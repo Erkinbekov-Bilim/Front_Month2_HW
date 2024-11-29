@@ -1,0 +1,64 @@
+canvas{
+    display: block;
+    margin: 0 auto;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.modal {
+    width: 500px;
+    height: 300px;
+    position: fixed;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    z-index: 10;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+.modal.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+body.modal-open {
+    transition: filter 0.5s ease;
+}
+
+#overlay-hide {
+    display: none;
+}
+
+#overlay-show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(5px);
+}
+
+
+.restart {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.restart:hover {
+    background-color: #45a049;
+}
+
